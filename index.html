@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>تشفير وفك تشفير النصوص باستخدام AES</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+</head>
+<body>
+    <div class="home">
+        <h2>تشفير وفك تشفير النصوص باستخدام AES</h2>
+        
+        <label for="text">أدخل النص : </label>
+        <input type="text" id="text" placeholder="اكتب أي نص">
+        <button onclick="encryptText()">🔐 تشفير</button>
+        <button onclick="decryptText()">🔓 فك التشفير</button>
+        
+        <h3> النص المشفر : </h3>
+        <p id="encryptedText"></p>
+
+        <h3>النص المفكوك : </h3>
+        <p id="decryptedText"></p>        
+    </div>
+
+    <footer>
+        <p>بُرمج بـ🤍 من طالبات الأمن السيبراني.<br>
+            كل الحقوق محفوظة ©2025.
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
